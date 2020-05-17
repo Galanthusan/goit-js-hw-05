@@ -83,8 +83,8 @@ class Car {
    * но только в том случае если машина заведена!
    */
   drive(hours) {
-    if (this.isOn === true) {
-      this.distance = hours * this.speed;
+    if (this.isOn) {
+      this.distance += this.speed * hours;
     }
   }
 }
